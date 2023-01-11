@@ -4,20 +4,23 @@
     color: black;
     margin-bottom: 0;
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;   
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px rgb(139, 0, 0);   
 }
 
 .next-btn, .prev-btn {
-    padding: 5px;
-    margin: 15px;
+    padding: 15px 15px;
+    margin: 15px 40px;
     width: 100px;
     border-radius: 10%;
     background-color: #ef5f7c;
     color: whitesmoke;
     cursor: pointer;
     font-weight: bold;
-    
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
 }
+
 body {
     /* color: #fff; */
     font-family: 'Nunito Semibold';
