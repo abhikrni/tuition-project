@@ -3,19 +3,35 @@
     font-weight: bold;
     color: black;
     margin-bottom: 0;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;   
 }
 
+.next-btn, .prev-btn {
+    padding: 5px;
+    margin: 15px;
+    width: 100px;
+    border-radius: 10%;
+    background-color: #ef5f7c;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
 body {
-    color: #fff;
+    /* color: #fff; */
     font-family: 'Nunito Semibold';
     text-align: center;
 }
 
 .no-of-stu {
-    font-size: 25px;
+    font-size: 15px;
+    justify-content: center;
 }
 
-#content {
+#content, #content-second,
+#content-third,
+#content-fourth {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, minmax(150px, auto));
@@ -26,12 +42,13 @@ body {
     height: 100vh;
 }
 
-#content div {
+#content div, #content-second div, #content-third div,#content-fourth div {
     /* background: #ea2f54; */
     padding: 30px;
 }
 
-#content div:nth-child(even) {
+#content div:nth-child(even), #content-second div:nth-child(even), 
+#content-third div:nth-child(even), #content-fourth div:nth-child(even) {
     /* background: #777; */
     padding: 30px;
 }
@@ -39,8 +56,9 @@ body {
 .one {
     /*grid-column-start: 1;
 			grid-column-end: 3;*/
+    color: white;
     grid-column: 1 / 3;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     background: #ef5f7c;
 }
@@ -48,7 +66,7 @@ body {
 .two {
     grid-column: 3 / 7;
     background: #ea284f;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
 
 }
@@ -57,7 +75,7 @@ body {
     grid-column: 1 / 4;
     grid-row: 2 / 4;
     background: #ed224b;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -65,14 +83,14 @@ body {
     grid-column: 4 / 7;
     grid-row: 2 / 4;
     background: #ed0e3a;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .five {
     grid-column: 3 / 7;
     background: #e8234a;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -80,6 +98,17 @@ body {
     grid-column: 1 / 3;
     grid-row: 4;
     background: #ed7089;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
+}
+
+.box {
+    color: whitesmoke;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    /* background: #ff800a; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px #fff;
 }
